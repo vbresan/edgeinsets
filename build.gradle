@@ -1,5 +1,5 @@
 plugins {
-    id "com.android.library"
+    id "com.android.library" version "9.4.1"
     id "maven-publish"
 }
 
@@ -39,7 +39,7 @@ publishing {
         release(MavenPublication) {
             groupId    = "com.github.vbresan"
             artifactId = "edgeinsets"
-            version    = "1.0.0"
+            version    = "1.0.2"
 
             afterEvaluate {
                 from components.release
