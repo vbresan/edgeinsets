@@ -1,3 +1,5 @@
+![](https://repository-images.githubusercontent.com/1429874720/6a5e3097-209f-4cff-b292-bd056aa4ad32)
+
 # EdgeInsets
 
 [![](https://jitpack.io/v/vbresan/edgeinsets.svg)](https://jitpack.io/#vbresan/edgeinsets)
@@ -6,6 +8,7 @@ A small Android library that handles edge-to-edge window insets on API 36+ with 
 
 On API 36, apps that target 36 are drawn behind the status bar, the navigation bar and display cutouts, and `Window.setStatusBarColor()` no longer has any effect. `EdgeInsets.apply(activity)` restores the layout most apps expect, without insets code in every activity.
 
+> [!NOTE]
 > If this library saved you time, you are more than welcome to **say thanks** on [Ko-fi](https://ko-fi.com/vbresan/?utm_source=edgeinsets&utm_medium=github-readme&utm_campaign=regular) or [Liberapay](https://liberapay.com/vbresan/?utm_source=edgeinsets&utm_medium=github-readme&utm_campaign=regular).  
 A star on the repo helps too.
 
@@ -76,7 +79,6 @@ protected void onCreate(Bundle savedInstanceState) {
 
 - The strip height comes from the system's status bar inset. In an activity with a window action bar on API 36, that inset also covered the action bar on the devices tested, so the colored strip sits behind both. The library relies on this platform behavior, and it has not been verified across all themes. In a no-title activity the strip covers only the status bar.
 - The strip color is always the theme's `colorPrimary`. It cannot be set from code yet.
-- A floating keyboard reports no insets, so it can cover content. The system does not give apps anything to react to in that case.
 - Whether 3-button navigation icons turn white depends on the system honoring the appearance flag. Check it on a real device. It may not work on emulators.
 
 ## Tested
