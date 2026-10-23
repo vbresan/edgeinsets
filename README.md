@@ -6,7 +6,7 @@ A small Android library that handles edge-to-edge window insets on API 36+ with 
 
 On API 36, apps that target 36 are drawn behind the status bar, the navigation bar and display cutouts, and `Window.setStatusBarColor()` no longer has any effect. `EdgeInsets.apply(activity)` restores the layout most apps expect, without insets code in every activity.
 
-> If this library saved you time, you are more than welcome to **say thanks** on [Ko-fi](https://ko-fi.com/vbresan/?utm_source=edgeinsets&utm_medium=github-readme&utm_campaign=regular) or [Liberapay](https://liberapay.com/vbresan/?utm_source=edgeinsets&utm_medium=github-readme&utm_campaign=regular).  
+> 💙 If this library saved you time, you are more than welcome to **say thanks** on [Ko-fi](https://ko-fi.com/vbresan/?utm_source=edgeinsets&utm_medium=github-readme&utm_campaign=regular) or [Liberapay](https://liberapay.com/vbresan/?utm_source=edgeinsets&utm_medium=github-readme&utm_campaign=regular).  
 A star on the repo helps too.
 
 ## What it does
